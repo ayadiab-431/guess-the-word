@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Word Game</title>
+    <!-- CSS StyleSheet -->
+    <link rel="stylesheet" href="./style/guess.css">
+    <!-- bootsrap file -->
+    <link rel="stylesheet" href="./style/bootstrap.css">
+</head>
+<body class="text-light">
+    <h1 class="text-center p-2">Guess The Word</h1>
+    <div class="floating-message">
+        <h2>Choose The Length Of The Word</h2>
+        <ul class="length-of-word">
+            <li id="4letters">4 Letters</li>
+            <li id="5letters">5 Letters</li>
+            <li id="6letters">6 Letters</li>
+        </ul>
+    </div>
+        <div class="container guess-game row d-flex align-items-center justify-content-between mx-auto my-5">
+            <div class="game col-md-6">
+                <div class="inputs">
+                </div>
+                <div class="control d-flex justify-content-center">
+                    <button class="bttn check-word">Check Word</button>
+                    <button class="bttn hint"><span>2</span> Hint</button>
+                </div>
+                <div class="message">
+                    <!-- <button class="bttn play-again">Play Again</button> -->
+                </div>
+            </div>
+            <div class="game-instruction col-md-4">
+                <h2 class="text-center py-3">Key Colors</h2>
+                <div class="key-color">
+                    <span class="key yes-in-place"></span>
+                    <p class="key-text">Letter Is Correct And In Place</p>
+                </div>
+                <div class="key-color">
+                    <span class="key not-in-place"></span>
+                    <p class="key-text">Letter Is Correct But Not In Place</p>
+                </div>
+                <div class="key-color">
+                    <span class="key wrong"></span>
+                    <p class="key-text">Letter Is Wrong</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS File -->
+    <script src="./script/main.js"></script>
+    <link rel="stylesheet" href="./script/bootstrap.js">
+    <link rel="stylesheet" href="./script/popper.min.js">
+    <link rel="stylesheet" href="./script/jquery-3.7.1.js">
+</body>
+</html>
